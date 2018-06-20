@@ -6,5 +6,5 @@ target 'SwinjectX' do
   use_frameworks!
 
   # Pods for SwinjectX
-  pod 'Swinject', '~> 2.4.0'
+  pod 'Swinject', '~> 2.4.1'
 end
