@@ -7,4 +7,7 @@ target 'SwinjectX' do
 
   # Pods for SwinjectX
   pod 'Swinject', '~> 2.4.1'
+  pod 'ObjectMapper', '~> 3.3.0'
+  pod 'Alamofire', '~> 4.7.2'
+  pod 'AlamofireObjectMapper', '~> 5.0.0'
 end
