@@ -70,5 +70,5 @@ fastlane/test_output
 
 # Other
 .DS_Store
-SwinjectX.xcodeproj/
-SwinjectX.xcworkspace/
+SwinjectX.xcodeproj/project.xcworkspace/xcshareddata
+SwinjectX.xcworkspace/xcshareddata
