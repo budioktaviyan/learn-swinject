@@ -4,42 +4,50 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var homeCollectionView: UICollectionView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    fileprivate let cellIdentifier: String = "HomeCollectionViewCell"
+    fileprivate let brands: [String] = [
+        "Apple",
+        "Google",
+        "Amazon",
+        "Samsung",
+        "Motorola",
+        "Xiaomi",
+        "Lenovo",
+        "Asus",
+        "Sony",
+        "Oppo",
+        "Vivo",
+        "Nokia",
+        "Microsoft",
+        "Acer",
+        "Dell"
+    ].sorted()
 
-        // Do any additional setup after loading the view.
+    override func viewDidLoad() {
         self.title = "Home"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(
-            title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil
+            title: nil,
+            style: UIBarButtonItemStyle.plain,
+            target: nil,
+            action: nil
         )
 
-        let homeCollectionViewCell = UINib(nibName: "HomeCollectionViewCell", bundle: nil)
-        self.homeCollectionView.register(homeCollectionViewCell, forCellWithReuseIdentifier: "HomeCollectionViewCell")
+        let homeCollectionViewCell = UINib(nibName: cellIdentifier, bundle: nil)
+        self.homeCollectionView.register(homeCollectionViewCell, forCellWithReuseIdentifier: cellIdentifier)
         self.homeCollectionView.delegate = self
         self.homeCollectionView.dataSource = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 
-extension HomeViewController:
-         UICollectionViewDelegate,
-         UICollectionViewDataSource,
-         UICollectionViewDelegateFlowLayout {
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        return 10
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return brands.count
     }
 
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell",
-                                                    for: indexPath) as! HomeCollectionViewCell
-        cell.uiLabel.text = "Halo from cell"
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! HomeCollectionViewCell
+        cell.uiLabel.text = brands[indexPath.row]
 
         return cell
     }
@@ -47,6 +55,11 @@ extension HomeViewController:
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 50)
+        return CGSize(width: view.frame.width, height: 50)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let brand = brands[indexPath.row]
+        AppRouter.sharedInstance.presentView(viewController: DetailViewController(brand: brand))
     }
 }

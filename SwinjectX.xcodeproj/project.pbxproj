@@ -12,6 +12,7 @@
 		1F735F8120DEF7130023F2D4 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F735F8020DEF7130023F2D4 /* AppAssembly.swift */; };
 		1F735F8320DEF7580023F2D4 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F735F8220DEF7580023F2D4 /* DetailAssembly.swift */; };
 		1F735F8520DEF83E0023F2D4 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F735F8420DEF83E0023F2D4 /* HomeAssembly.swift */; };
+		1F8A2FEE213246BF00A3D98E /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A2FED213246BF00A3D98E /* DetailModule.swift */; };
 		1F9DE50520F365210028C035 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DE50320F365210028C035 /* HomeCollectionViewCell.swift */; };
 		1F9DE50620F365210028C035 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F9DE50420F365210028C035 /* HomeCollectionViewCell.xib */; };
 		1FBA158A20C7B59B006B21C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBA158920C7B59B006B21C9 /* AppDelegate.swift */; };
@@ -19,6 +20,9 @@
 		1FC6D85920E6327200EBEC5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC6D85820E6327200EBEC5A /* LaunchScreen.xib */; };
 		1FC6D85C20E6430300EBEC5A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6D85A20E6430300EBEC5A /* HomeViewController.swift */; };
 		1FC6D85D20E6430300EBEC5A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC6D85B20E6430300EBEC5A /* HomeViewController.xib */; };
+		1FE4CFA820F4BADF001CE2FA /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4CFA720F4BADF001CE2FA /* AppModule.swift */; };
+		1FE4CFAA20F4BB0F001CE2FA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4CFA920F4BB0F001CE2FA /* AppRouter.swift */; };
+		1FE4CFAC20F4BCE5001CE2FA /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE4CFAB20F4BCE5001CE2FA /* HomeModule.swift */; };
 		26F38FB4D804D4C21D6B98DE /* Pods_SwinjectX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B43E0504B2A73A0CB6EE66 /* Pods_SwinjectX.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,7 @@
 		1F735F8020DEF7130023F2D4 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		1F735F8220DEF7580023F2D4 /* DetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
 		1F735F8420DEF83E0023F2D4 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		1F8A2FED213246BF00A3D98E /* DetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
 		1F9DE50320F365210028C035 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F9DE50420F365210028C035 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		1FBA158620C7B59B006B21C9 /* SwinjectX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwinjectX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +42,9 @@
 		1FC6D85820E6327200EBEC5A /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		1FC6D85A20E6430300EBEC5A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1FC6D85B20E6430300EBEC5A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1FE4CFA720F4BADF001CE2FA /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		1FE4CFA920F4BB0F001CE2FA /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		1FE4CFAB20F4BCE5001CE2FA /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		27B43E0504B2A73A0CB6EE66 /* Pods_SwinjectX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwinjectX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87243F2A54EB12C31C5BFF43 /* Pods-SwinjectX.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectX/Pods-SwinjectX.debug.xcconfig"; sourceTree = "<group>"; };
 		CDD4A6A149A226ED6C4CE2EA /* Pods-SwinjectX.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectX/Pods-SwinjectX.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +67,8 @@
 			children = (
 				1F735F9720DF7A2E0023F2D4 /* Modules */,
 				1F735F8020DEF7130023F2D4 /* AppAssembly.swift */,
+				1FE4CFA720F4BADF001CE2FA /* AppModule.swift */,
+				1FE4CFA920F4BB0F001CE2FA /* AppRouter.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -76,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				1F735F8220DEF7580023F2D4 /* DetailAssembly.swift */,
+				1F8A2FED213246BF00A3D98E /* DetailModule.swift */,
 				1F69792520F3532A0041E436 /* DetailViewController.swift */,
 				1F69792620F3532A0041E436 /* DetailViewController.xib */,
 			);
@@ -86,10 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				1F735F8420DEF83E0023F2D4 /* HomeAssembly.swift */,
-				1FC6D85A20E6430300EBEC5A /* HomeViewController.swift */,
-				1FC6D85B20E6430300EBEC5A /* HomeViewController.xib */,
+				1FE4CFAB20F4BCE5001CE2FA /* HomeModule.swift */,
 				1F9DE50320F365210028C035 /* HomeCollectionViewCell.swift */,
 				1F9DE50420F365210028C035 /* HomeCollectionViewCell.xib */,
+				1FC6D85A20E6430300EBEC5A /* HomeViewController.swift */,
+				1FC6D85B20E6430300EBEC5A /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -237,16 +249,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwinjectX/Pods-SwinjectX-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +268,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9DE50520F365210028C035 /* HomeCollectionViewCell.swift in Sources */,
+				1FE4CFA820F4BADF001CE2FA /* AppModule.swift in Sources */,
+				1FE4CFAC20F4BCE5001CE2FA /* HomeModule.swift in Sources */,
 				1FC6D85C20E6430300EBEC5A /* HomeViewController.swift in Sources */,
 				1FBA158A20C7B59B006B21C9 /* AppDelegate.swift in Sources */,
 				1F735F8320DEF7580023F2D4 /* DetailAssembly.swift in Sources */,
+				1F8A2FEE213246BF00A3D98E /* DetailModule.swift in Sources */,
+				1FE4CFAA20F4BB0F001CE2FA /* AppRouter.swift in Sources */,
 				1F69792720F3532A0041E436 /* DetailViewController.swift in Sources */,
 				1F735F8520DEF83E0023F2D4 /* HomeAssembly.swift in Sources */,
 				1F735F8120DEF7130023F2D4 /* AppAssembly.swift in Sources */,
@@ -393,8 +403,8 @@
 			baseConfigurationReference = 87243F2A54EB12C31C5BFF43 /* Pods-SwinjectX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VB5GY8X6B2;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwinjectX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,6 +412,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baculsoft.swinjectx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -412,8 +423,8 @@
 			baseConfigurationReference = CDD4A6A149A226ED6C4CE2EA /* Pods-SwinjectX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VB5GY8X6B2;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwinjectX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,6 +432,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baculsoft.swinjectx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

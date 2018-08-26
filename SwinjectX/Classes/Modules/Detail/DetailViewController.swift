@@ -1,16 +1,22 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        self.title = "Detail"
+
+    @IBOutlet weak var brandName: UILabel!
+
+    fileprivate var brand: String
+
+    init(brand: String) {
+        self.brand = brand
+        super.init(nibName: "DetailViewController", bundle: nil)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func viewDidLoad() {
+        self.title = "Detail"
+        self.brandName.text = brand
     }
 }
